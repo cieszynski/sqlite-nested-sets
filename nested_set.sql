@@ -1,10 +1,12 @@
 -- main table
 CREATE TABLE tree (
-    _id     INTEGER PRIMARY KEY,
-    name    TEXT NOT NULL,
-    lft     INTEGER NOT NULL,
-    rgt     INTEGER NOT NULL
-);
+	_id	INTEGER,
+	name	TEXT NOT NULL,
+	lft	INTEGER,
+	rgt	INTEGER,
+	parent	INTEGER,
+	PRIMARY KEY(_id)
+)
 
 -- helper table to store variable
 CREATE TABLE p (
